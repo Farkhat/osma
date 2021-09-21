@@ -10,6 +10,7 @@ export const Main = () => {
     <div className="main">
       <Components.Services />
       <Components.AboutUs />
+      <Components.Partners />
       {/* {data.counts.map(count => <Components.Counter key={count.id} data={count}/>)} */}
     </div>
   );

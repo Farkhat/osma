@@ -1,15 +1,23 @@
 import React from "react";
 import * as ReactRedux from "react-redux";
 import { Link } from "react-router-dom";
-
+import * as AppRedux from "../../redux";
 import logo from "./logo.svg";
 import "./index.css";
 
 
-export const Navbar = ({ currentPage }) => {
-  const lang = ReactRedux.useSelector((state) => state.lang);
-  const strings = ReactRedux.useSelector((state) => state.strings);
+export const Navbar = () => {
+  const dispatch = ReactRedux.useDispatch();
 
+  
+  const strings = ReactRedux.useSelector((state) => state.strings);
+  const lang = ReactRedux.useSelector((state) => state.lang);
+
+  const handleLangClick = (e) => {
+    const lang = e.target.value;
+
+    dispatch(AppRedux.SetLanguageAction(lang));
+  };
 
   return (
     <nav id="navigation-bar" className="navbar navbar-expand-lg navbar-light">
@@ -79,8 +87,8 @@ export const Navbar = ({ currentPage }) => {
           <i className="d-flex fas fa-search" onClick={() => setMenuOpen(true)}/>
         </a> */}
         <ul className="d-flex lang-select">
-          <select className="form-select" aria-label="language">
-            <option defaultValue="ru">{strings[lang]["nav-lang-ru"]}</option>
+          <select className="form-select" onChange={handleLangClick}>
+            <option value="ru" defaultValue="ru">{strings[lang]["nav-lang-ru"]}</option>
             <option value="kg">{strings[lang]["nav-lang-kg"]}</option>
             <option value="en">{strings[lang]["nav-lang-en"]}</option>
           </select>

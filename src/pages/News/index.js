@@ -41,7 +41,7 @@ export const News = () => {
                   <p className="col not">26.01.2021</p>
                   <a className="col" href="#">
                     <Link to="news-info">
-                      <p className="not">Подробнее</p>
+                      <p className="not">{strings[lang]["news-more"]}</p>
                     </Link>
                   </a>
                 </div>

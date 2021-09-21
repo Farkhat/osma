@@ -1,0 +1,15 @@
+
+#partners .partners_title{
+margin-left: 180px;
+color: rgb(33, 37, 41);
+ font-family: Montserrat, sans-serif;
+font-size: 40px;
+ font-weight: 500;
+}
+
+
+#partners .partners_img {
+    background-image: url(./img/fortylines2.jpg);
+    background-repeat: no-repeat;
+    height: 300px;
+}
