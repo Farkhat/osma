@@ -61,7 +61,7 @@ export const Objects = () => {
                 </Link> 
             </div>
           </div>
-          <div className="col card">
+           {/* <div className="col card">
             <img className="card-img-top" alt='' />
             <div className="card-body">
               {
@@ -124,9 +124,9 @@ export const Objects = () => {
                 <Link to="/objects-info" className="card-link">
                   {strings[lang]["objects-more"]}
                 </Link>
-              </div>
-            </div>
-          </div>
+              </div> 
+            </div>  
+          </div>*/}
         </div>
       </div>
     </div>
