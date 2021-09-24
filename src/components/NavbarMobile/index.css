@@ -55,6 +55,11 @@
 #navigation-bar-mobile > .menu > .links {
   list-style: none;
 }
+.form-select {
+  background-color: #00283f;
+  color: #fff;
+  border-color: #00283f;
+}
 
 @media (max-width: 992px) {
   #navigation-bar-mobile {

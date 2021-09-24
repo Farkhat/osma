@@ -1,12 +1,15 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-
+import * as AppRedux from "../../redux";
 import * as ReactRedux from "react-redux";
 import logo from "./logo.svg";
 
 import "./index.css";
 
 export const NavbarMobile = () => {
+  
+  const dispatch = ReactRedux.useDispatch();
+
   const lang = ReactRedux.useSelector((state) => state.lang);
   const strings = ReactRedux.useSelector((state) => state.strings[lang]);
 
@@ -15,7 +18,14 @@ export const NavbarMobile = () => {
   const handleLinkClick = () => {
     setMenuOpen(false);
   }
-
+    const handleLangClick = (e) => {
+      const lang = e.target.value;
+  
+      dispatch(AppRedux.SetLanguageAction(lang));
+    };
+    
+  
+   
   return (
     <div id="navigation-bar-mobile" className="navbar">
 
@@ -107,9 +117,17 @@ export const NavbarMobile = () => {
             </a>
           </li> */}
           <li className="nav-item">
-            <a href="#" className="nav-link">
+            {/* <a href="#" className="nav-link">
               {strings[lang]}
-            </a>
+            </a> */}
+ 
+            
+            <select className="form-select" onChange={handleLangClick}>
+            <option value="ru" defaultValue="ru">Ru{strings[lang]["nav-lang-ru"]}</option>
+            <option value="kg">Kg{strings[lang]["nav-lang-kg"]}</option>
+            <option value="en">En{strings[lang]["nav-lang-en"]}</option>
+          </select>
+          
           </li>
           <li className="nav-item">
             <a href="#" className="nav-link" onClick={() => setMenuOpen(true)}>
