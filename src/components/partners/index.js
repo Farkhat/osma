@@ -12,7 +12,7 @@ export const Partners = () => {
             <h1 className="title">{strings[lang]["partners_title"]}</h1>
             <div className="row row-cols-4 justify-content-around">
                 <div className="col activities img-1"> 
-                <h2>Fortylines</h2>                
+                <a href="https://fortylines.io/"><h2>Fortylines</h2></a>              
                 </div>
                 <div className="col activities img-2">                 
                 </div> 
