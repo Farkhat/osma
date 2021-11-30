@@ -16,8 +16,13 @@
 #partners h2{
     font-family: Google sans;
     position: relative;
+    text-decoration: none;
+    color:black;
     top:80px;
     left:20px;
+}
+a{
+    text-decoration: none; 
 }
 
 @media (max-width: 900px) {

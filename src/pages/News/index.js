@@ -25,8 +25,8 @@ export const News = () => {
 
   return (
     <div>
-      {/* <Link to="/headerNews" className="card-link" /> */}
-      <div id="news" className="container">
+      
+      {/* <div id="news" className="container">
         <div className="row row1">
           <h1>{strings[lang]["news-title"]}</h1>
           <div className="col-md-6 news-card">
@@ -48,7 +48,7 @@ export const News = () => {
               </div>
             </div>
           </div>
-          {/* <div className="col-md-6 news-card">
+          <div className="col-md-6 news-card">
             <div className="card card-cstm h-100">
               <img src={img.img2} className="card-img-top img-2" alt="..." />
               <div className="card-body card-body-cstm">
@@ -65,9 +65,9 @@ export const News = () => {
                 </div>
               </div>
             </div>
-          </div> */}
+          </div>
         </div>
-        {/* <div className="row row2">
+         <div className="row row2">
           <div className="col-md-3 news-card">
             <div className="card h-100">
               <img src={img.img3} className="card-img-top img-3" alt="..." />
@@ -140,8 +140,8 @@ export const News = () => {
               </div>
             </div>
           </div>
-        </div> */}
-      </div>
+        </div> 
+      </div> */}
     </div>
   );
 };

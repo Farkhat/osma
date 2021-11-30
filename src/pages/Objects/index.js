@@ -16,7 +16,7 @@ export const Objects = () => {
   const content_array = data?.[0]?.content?.rendered.split('\n\n\n\n');
   const address = content_array?.[0];
 
-  useEffect(() => {
+   useEffect(() => {
      fetch('https://osmagroup.000webhostapp.com/wp-json/wp/v2/building-objects')
     .then(res => res.json())
     .then(json => {
