@@ -10,6 +10,7 @@
 #partners h1{
     position: relative;
     top: -70px;  
+    
 }
 
 
@@ -18,6 +19,11 @@
     position: relative;
     top:80px;
     left:20px;
+}
+
+#partners a{
+    text-decoration: none;
+    color: black;
 }
 
 @media (max-width: 900px) {
