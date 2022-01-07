@@ -32,6 +32,7 @@ function App() {
             <Components.Navbar currentPage={currentPage}/>
             <Components.NavbarMobile/>
             <Components.Header currentPage={currentPage}/>
+            <Route exact path="/home" component={Pages.Main}/>
             <Route exact path="/" component={Pages.Main}/>
             <Route exact path="/objects" component={Pages.Objects}/>
             <Route exact path="/objects-info" component={Pages.ObjectsInfo}/>
@@ -39,6 +40,7 @@ function App() {
             <Route exact path="/news-info" component={Pages.NewsInfo}/>
             <Route exact path="/career" component={Pages.Career}/>
             <Route exact path="/contacts" component={Pages.Contacts}/>
+            <BrowserRouter basename="https://osmagroup.org/" />
             <Components.Footer/>
         </div>
     );
