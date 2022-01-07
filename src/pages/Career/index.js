@@ -41,14 +41,11 @@ export const Career = () => {
                             {/*<form className="contact-form" encType="multipart/form-data" method="post" onSubmit={sendEmail}>*/}
                             <form className="contact-form" method="post" onSubmit={sendEmail}>
                                 <p> {strings[lang]["career-forms-description"]} </p>
-                                <input type="text" name="user_name" placeholder={strings[lang]["career-name"]}
-                                       required/>
+                                <input type="text" name="user_name" placeholder={strings[lang]["career-name"]} required/>
                                 <hr/>
-                                <input type="email" name="user_email" placeholder={strings[lang]["career-mail"]}
-                                       required/>
+                                <input type="email" name="user_email" placeholder={strings[lang]["career-mail"]} required/>
                                 <hr/>
-                                <input type="text" name="user_phone" maxLength={20}
-                                       placeholder={strings[lang]["career-phone"]} required/>
+                                <input type="text" name="user_phone" maxLength={20} placeholder={strings[lang]["career-phone"]} required/>
                                 <hr/>
                                 <br/>
                                 <label>{strings[lang]["career-file-upload-warning"]}:</label>
