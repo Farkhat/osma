@@ -23,7 +23,7 @@
 
 #partners a{
     text-decoration: none;
-    color: black;
+    color: rgb(23, 39, 59);
 }
 
 @media (max-width: 900px) {
